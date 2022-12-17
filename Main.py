@@ -11,7 +11,7 @@ while i<(n+1):
     i=i+1
 
 i=0
-while i<n:
+while i<n:#створення таблички 1
     while  j<n:
         po=(x[six]**2)+(2*x[on])
         x1x2.append(po)
