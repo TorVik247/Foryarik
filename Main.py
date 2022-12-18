@@ -2,6 +2,7 @@ n=8
 x=[]
 x1x2=[]
 pi=[]
+n2=[]
 y=[]
 on=0
 six=0
@@ -24,7 +25,6 @@ while i<n:#створення таблички 1
     j=0
     i=i+1
 
-
 i=0
 for j in x1x2:   #вивод
     if i>n-1:
@@ -34,17 +34,27 @@ for j in x1x2:   #вивод
     i=i+1
 
 t=x1x2[0]
-while t<=po:
+while t<=po:                    #y
     y.append(t)
     t=t+1
-print()
-print('y =',y)
 
 i=y[0]
-while i<=len(y):#неправильно
-    pit=i/len(y)
-    pi.append(pit)
+while i<=po:                    #n
+    n2.append(x1x2.count(i))
     i=i+1
 
+i=0
+while i<len(y):                 #pi
+    j=n2[i]
+    if j==0:
+        pi.append(j)
+        i = i + 1
+    else:
+        pit=j/(n*n)
+        pi.append(pit)
+        i=i+1
 print()
-print(pi)
+print()
+print('y =',y)
+print('pi=',pi)
+print('n =', n2)
