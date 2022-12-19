@@ -30,8 +30,11 @@ for j in x1x2:   #вивод
     if i>n-1:
         print()
         i=0
-    print(j, end=" ")
-    i=i+1
+    if j<10:
+        print(j, end="  ")
+    else:
+        print(j, end=" ")
+    i=i+1 
 
 t=x1x2[0]
 while t<=po:                    #y
