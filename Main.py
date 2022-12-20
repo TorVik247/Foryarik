@@ -1,11 +1,12 @@
-n=8
 x=[]
+n=8
 x1x2=[]
+on=0
+six=0
 pi=[]
 n2=[]
 y=[]
-on=0
-six=0
+
 i=1
 j=0
 
@@ -34,7 +35,7 @@ for j in x1x2:   #вивод
         print(j, end="  ")
     else:
         print(j, end=" ")
-    i=i+1 
+    i=i+1
 
 t=x1x2[0]
 while t<=po:                    #y
